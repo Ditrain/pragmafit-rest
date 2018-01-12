@@ -13,7 +13,7 @@ const app = express();
 
 //Set up mongoose connection
 const mongoose = require('mongoose');
-const mongoDB = 'dbURL.url';
+const mongoDB = dbURL.url;
 mongoose.connect(mongoDB, {
   useMongoClient: true
 });
