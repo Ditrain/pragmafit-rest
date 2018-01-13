@@ -4,6 +4,7 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const markoExpress = require('marko/express');
 const dbURL = require('./config/db');
 
 //Routes
