@@ -1,6 +1,6 @@
-const { body,validationResult } = require('express-validator/check'),
-      { sanitizeBody } = require('express-validator/filter'),
-      MovementAngle = require('../models/movement_angle')
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+const MovementAngle = require('../models/MovementAngle');
 
 // Display list of all MovementAngles
 exports.movementAngleList = function(req, res, next) {

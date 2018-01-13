@@ -1,9 +1,9 @@
-const { body,validationResult } = require('express-validator/check'),
-      { sanitizeBody } = require('express-validator/filter'),
-      Exercise = require('../models/exercise'),
-      MovementAngle = require('../models/movement_angle'),
-      MuscleGroup = require('../models/muscle_group'),
-      async = require('async')
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+const Exercise = require('../models/Exercise');
+const MovementAngle = require('../models/MovementAngle');
+const MuscleGroup = require('../models/MuscleGroup');
+const async = require('async');
 
 // Display list of all Exercises
 exports.exerciseList = function(req, res, next) {

@@ -1,9 +1,9 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
-const Exercise = require('../models/exercise');
-const Equipment = require('../models/equipment');
-const WorkoutSession = require('../models/workout_session');
-const async = require('async')
+const Exercise = require('../models/Exercise');
+const Equipment = require('../models/Equipment');
+const WorkoutSession = require('../models/WorkoutSession');
+const async = require('async');
 
 // Display list of all WorkoutSessions
 exports.workoutSessionList = function(req, res, next) {

@@ -1,6 +1,6 @@
-const { body,validationResult } = require('express-validator/check'),
-      { sanitizeBody } = require('express-validator/filter'),
-      MuscleGroup = require('../models/muscle_group')
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+const MuscleGroup = require('../models/MuscleGroup');
 
 // Display LIST of all MuscleGroups
 exports.muscleGroupList = function(req, res, next) {

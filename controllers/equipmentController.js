@@ -1,6 +1,7 @@
-const { body,validationResult } = require('express-validator/check'),
-      { sanitizeBody } = require('express-validator/filter'),
-      Equipment = require('../models/equipment')
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+const Equipment = require('../models/Equipment');
+
 // Display list of all Equipments
 exports.equipmentList = function(req, res, next) {
     Equipment.find()
